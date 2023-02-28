@@ -43,9 +43,8 @@
 						<!-- Valentine -->
 							<article id="valentine">
 								<h2 class="major">Valentine's Day</h2>
-								<!-- <h3 id="vday_countdown" class="countdown"></h3> -->
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Hi baby,<br><br>
+								<p class="message1">Hi baby,<br><br>
 								Happy Valentine's Day! I created this website for you so that you can read the messages I write for you on the first of every month. The next four months without you in Singapore will be difficult, and I will miss you a lot. Please take care of yourself, and I wish you all the best with your studies. I love you &#128151;<br><br>
 								- Beanstalk Chan</p>
 							</article>
@@ -54,24 +53,32 @@
 							<article id="march">
 								<h2 class="major">March 1st</h2>
 								<h3 id="march_countdown" class="countdown"></h3>	
+								<span class="image main"><img id="marchImage"/></span>
+								<p id="marchMessage"></p>
 							</article>
 
 						<!-- April -->
 							<article id="april">
 								<h2 class="major">April 1st</h2>
 								<h3 id="april_countdown" class="countdown"></h3>	
+								<span class="image main"><img id="aprilImage"/></span>
+								<p id="aprilMessage"></p>
 							</article>
 
 						<!-- May -->
 							<article id="may">
 								<h2 class="major">May 1st</h2>
 								<h3 id="may_countdown" class="countdown"></h3>	
+								<span class="image main"><img id="mayImage"/></span>
+								<p id="mayMessage"></p>	
 							</article>
 
 						<!-- June -->
 							<article id="june">
 								<h2 class="major">June 1st</h2>
 								<h3 id="june_countdown" class="countdown"></h3>	
+								<span class="image main"><img id="juneImage"/></span>
+								<p id="juneMessage"></p>
 							</article>
 
 					</div> 
@@ -95,7 +102,7 @@
 
 			<script>
 				// Set the date we're counting down to
-				var marchDate = new Date('Feb 31, 2023 23:59:00').getTime();
+				var marchDate = new Date('Feb 28, 2023 23:59:59').getTime();
 				
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -119,14 +126,16 @@
 					// If the count down is finished, write some text
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("march_countdown").innerHTML = "Page will be updated shortly.";
+						document.getElementById("march_countdown").innerHTML = "";
+						document.getElementById("marchImage").src="images/pic02.jpg";
+						document.getElementById("marchMessage").innerHTML = "Hi babyy,<br><br>Happy 6th monthsary! &#128151; Time flew by when I'm with you and we have already been together for half a year. Thanks for always being so patient with my nonsense :))<br><br>It has been two weeks since you reached Melbourne, and I hope you are adjusting well there. I miss you a lot, and I can't wait to see you soon.<br><br>Love,<br>your Beanstalk Chan"
 					}
 				}, 1000);
 			</script>
 
 			<script>
 				// Set the date we're counting down to
-				var aprilDate = new Date('Mar 31, 2023 23:59:00').getTime();
+				var aprilDate = new Date('Mar 31, 2023 20:59:59').getTime();
 				
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -150,14 +159,16 @@
 					// If the count down is finished, write some text
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("april_countdown").innerHTML = "Page will be updated shortly.";
+						document.getElementById("april_countdown").innerHTML = "";
+						document.getElementById("marchImage").src="images/pic01.jpg";
+						document.getElementById("marchMessage").innerHTML = "Hi bb <br> hhii";
 					}
 				}, 1000);
 			</script>
 
 			<script>
 				// Set the date we're counting down to
-				var mayDate = new Date('Apr 31, 2023 23:59:00').getTime();
+				var mayDate = new Date('Apr 30, 2023 20:59:59').getTime();
 				
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -182,13 +193,15 @@
 					if (distance < 0) {
 						clearInterval(x);
 						document.getElementById("may_countdown").innerHTML = "Page will be updated shortly.";
+						document.getElementById("secondImage").src="images/pic01.jpg";
+						document.getElementById("message2").innerHTML = "Hi bb <br> hhii";
 					}
 				}, 1000);
 			</script>
 	
 			<script>
 				// Set the date we're counting down to
-				var juneDate = new Date('May 31, 2023 23:59:00').getTime();
+				var juneDate = new Date('May 31, 2023 20:59:59').getTime();
 				
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -213,6 +226,8 @@
 					if (distance < 0) {
 						clearInterval(x);
 						document.getElementById("june_countdown").innerHTML = "Page will be updated shortly.";
+						document.getElementById("secondImage").src="images/pic01.jpg";
+						document.getElementById("message2").innerHTML = "Hi bb <br> hhii";
 					}
 				}, 1000);
 			</script>
