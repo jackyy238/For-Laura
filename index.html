@@ -198,10 +198,10 @@
 					}
 				}, 1000);
 			</script>
-	
+
 			<script>
 				// Set the date we're counting down to
-				var juneDate = new Date('May 31, 2023 23:59:59').getTime();
+				var juneDate = new Date('May 21, 2023 23:59:59').getTime();
 				
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -225,9 +225,42 @@
 					// If the count down is finished, write some text
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("june_countdown").innerHTML = "Page will be updated shortly.";
-						document.getElementById("secondImage").src="images/pic01.jpg";
-						document.getElementById("message2").innerHTML = "Hi bb <br> hhii";
+						document.getElementById("june_countdown").innerHTML = "";
+						document.getElementById("juneImage").src="images/pic05.jpg";
+						document.getElementById("juneMessage").innerHTML = "Dear Baby, <br><br>Happy 9th Monthsary! <br>By the time you see this, I should finally be there with you :)<br>I know the last few months have been tough for both of us, but I'm glad we made it through. <br>I love you machi machi <3<br><br>- Jacky"
+					}
+				}, 1000);
+			</script>
+	
+			<script>
+				// Set the date we're counting down to
+				var juneDate = new Date('May 21, 2023 23:59:59').getTime();
+				
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+				
+					// Get today's date and time
+					var now = new Date().getTime();
+					
+					// Find the distance between now and the count down date
+					var distance = juneDate - now;
+					
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+					
+					// Display the result in the element with id="demo"
+					document.getElementById("june_countdown").innerHTML = days + " days " + hours + " hrs "
+					+ minutes + " mins " + seconds + " s " + "<br>till your next message :)";
+					
+					// If the count down is finished, write some text
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("june_countdown").innerHTML = "";
+						document.getElementById("juneImage").src="images/pic05.jpg";
+						document.getElementById("juneMessage").innerHTML = "Dear Baby, <br><br>Happy 9th Monthsary! <br>By the time you see this, I should finally be there with you :)<br>I know the last few months have been tough for both of us, but I'm glad we made it through. <br>I love you machi machi <3<br><br>- Jacky"
 					}
 				}, 1000);
 			</script>
